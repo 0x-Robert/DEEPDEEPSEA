@@ -1,6 +1,19 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+public enum gameStage{
+
+
+    gameStart,
+    sea1step,
+    sea2step,
+    sea3step,
+    sea4step
+
+
+
+    };
+
 
 public class MapManager : MonoBehaviour {
 
@@ -9,6 +22,7 @@ public class MapManager : MonoBehaviour {
     float interval = 0;
     void Start()
     {
+        gameStage.gameStart;
 
     }
 
@@ -22,6 +36,7 @@ public class MapManager : MonoBehaviour {
             obj.transform.position = new Vector3(-4, 0, 0);
             interval = 0;
         }
-    }
+    }
+
 
 }
